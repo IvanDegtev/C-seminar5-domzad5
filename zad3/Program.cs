@@ -15,7 +15,7 @@ double[] CreateArray(int length, int minRnd, int maxRnd)
 
     for (int i = 0; i < length; i++)
     {
-        array[i] = rnd.Next(minRnd, maxRnd + 1);
+        array[i] = rnd.Next(minRnd, maxRnd) + rnd.NextDouble();
     }
     return array;
 }
